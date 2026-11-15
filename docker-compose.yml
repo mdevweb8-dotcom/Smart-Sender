@@ -1,0 +1,27 @@
+services:
+  smart-sender:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart-sender
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+      DATABASE_PATH: /app/data/smart-sender.sqlite
+      STORAGE_PATH: /app/data/storage
+      WHATSAPP_SESSION_PATH: /app/data/wwebjs_auth
+      BACKUP_PATH: /app/data/backups
+      LOG_PATH: /app/data/logs
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - smart_sender_data:/app/data
+    shm_size: "1gb"
+
+volumes:
+  smart_sender_data:
+    driver: local

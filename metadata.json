@@ -1,0 +1,6 @@
+{
+  "name": "Smart-Sender",
+  "description": "مساعد واتساب ذكي متكامل لإدارة الملفات والمجلدات والجدولة باللغة العربية الطبيعية عبر Gemini API ولوحة تحكم ويب وتطبيق Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

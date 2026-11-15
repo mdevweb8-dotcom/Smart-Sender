@@ -1,0 +1,10 @@
+{
+	"appId": "com.smartsender.dashboard.app",
+	"appName": "Smart-Sender Dashboard",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"androidScheme": "http",
+		"cleartext": true
+	}
+}

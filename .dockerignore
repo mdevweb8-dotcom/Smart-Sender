@@ -1,0 +1,13 @@
+node_modules/
+dashboard-app/
+.git/
+.github/
+.env
+.env.*
+!.env.example
+data/
+.wwebjs_auth/
+.wwebjs_cache/
+dist/
+*.log
+*.apk

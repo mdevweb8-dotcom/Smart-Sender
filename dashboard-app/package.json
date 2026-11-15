@@ -1,0 +1,36 @@
+{
+  "name": "smart-sender-dashboard-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Smart-Sender Android Remote Control Dashboard (Capacitor Client)",
+  "author": "Mohammed Asim",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "npx -p typescript tsc --noEmit",
+    "test": "node -e \"console.log('Smart-Sender Dashboard APK client ready')\"",
+    "cap:sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
