@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 import type { Request, Response, NextFunction } from "express";
-import { config } from "../../config/env.ts";
-import { listDashboardUsers } from "../../database/repositories/usersRepo.ts";
+import { config } from "../config/env.ts";
+import { listDashboardUsers } from "../database/repositories/usersRepo.ts";
 
 export interface DashboardUser {
   id: string;
