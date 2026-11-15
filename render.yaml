@@ -1,0 +1,12 @@
+services:
+    - type: web
+    name: smart-sender
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: bash scripts/start.sh
+    envVars:
+            - key: NODE_ENV
+        value: production
+            - key: PORT
+        value: 10000
